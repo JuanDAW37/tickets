@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { helpHttp } from '../helper/Helper';
 import { Message } from '../message/Message';
+import { createPdf } from '../print/Print.js'
 import './Form.css';
 //import { json } from 'node:stream/consumers';
 
@@ -86,7 +87,8 @@ export const Form = () => {
         }
         api.get(url, options)
         .then((res)=>{ 
-            setDb(res);                          
+            setDb(res);
+            createPdf(res);
         });
     }
 
