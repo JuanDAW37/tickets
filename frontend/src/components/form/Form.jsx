@@ -78,7 +78,7 @@ export const Form = () => {
         }
     };
     
-    //TODO:FALTA IMPRIMIR
+    //TODO:FALTA IMPRIMIR, CON PDF-LIB
     const printData = () => {
         let options = {
             method: 'GET',
