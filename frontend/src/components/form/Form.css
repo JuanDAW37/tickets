@@ -1,0 +1,71 @@
+h2.h3{
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;    
+    min-width: 700px;    
+    margin: 5px auto;    
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;    
+}
+
+.nuevo {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nuevo:hover {
+    background-color: #0056b3;
+}
+
+.borrar {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #ff1100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.borrar:hover {
+    background-color: #b31b00;
+}
+
+.imprimir {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #59c411;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.imprimir:hover {
+    background-color: #0fb300;
+}

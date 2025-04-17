@@ -1,0 +1,22 @@
+[
+  {
+    "id": "e9b3acf5-5d47-47cd-a183-fa0479c60ddb",
+    "numero": 5,
+    "fecha": "01-05-2025",
+    "descripcion": "Ticket de mayo",
+    "base": 10000,
+    "iva": 10,
+    "cuota": 100,
+    "total": 10600
+  },
+  {
+    "id": "e5ddd645-e9de-491d-bdf9-ed195ad05342",
+    "numero": 5,
+    "fecha": "01-05-2025",
+    "descripcion": "Ticket de mayo",
+    "base": 10000,
+    "iva": 10,
+    "cuota": 100,
+    "total": 10600
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "3031aff6-71e7-4a3d-9da3-eb9ba625fd8a",
+    "numero": 1,
+    "fecha": "01/05/2025",
+    "descripcion": "Ticket 1",
+    "base": 100,
+    "iva": 10,
+    "cuota": 10,
+    "total": 110
+  }
+]
