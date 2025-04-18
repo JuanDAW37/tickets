@@ -19,51 +19,64 @@ label {
     font-weight: bold;
 }
 
+.numero{
+    width: 30px;
+    text-align: right;
+}
+
+.fecha{
+    width: 75px;
+    text-align: right;
+}
+
+.importes{
+    width: 75px;
+    text-align: right;
+}
+
 input{
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;    
 }
 
-.nuevo {
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.nuevo, .borrar, .imprimir {
     margin-top: 5px;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 10px;    
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+.nuevo{
+    background-color: #007bff;
 }
 
 .nuevo:hover {
     background-color: #0056b3;
 }
 
-.borrar {
-    margin-top: 5px;
-    padding: 10px;
+.borrar{
     background-color: #ff1100;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .borrar:hover {
     background-color: #b31b00;
 }
 
-.imprimir {
-    margin-top: 5px;
-    padding: 10px;
+.imprimir{
     background-color: #59c411;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .imprimir:hover {

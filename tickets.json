@@ -4,9 +4,29 @@
     "numero": 1,
     "fecha": "01/05/2025",
     "descripcion": "Ticket 1",
-    "base": 100,
+    "base": 100.25,
+    "iva": 10.1,
+    "cuota": 10.5,
+    "total": 110.75
+  },
+  {
+    "id": "bf64306c-df67-4b2d-abc3-d1b8ac115169",
+    "numero": 3,
+    "fecha": "18/4/2025",
+    "descripcion": "ssss",
+    "base": 20,
     "iva": 10,
-    "cuota": 10,
-    "total": 110
+    "cuota": 2,
+    "total": 22
+  },
+  {
+    "id": "1a312c79-f925-4489-8ac0-322dff9bb54c",
+    "numero": 1,
+    "fecha": "18/4/2025",
+    "descripcion": "ssss",
+    "base": 15,
+    "iva": 12.1,
+    "cuota": 1.81,
+    "total": 16.82
   }
 ]
