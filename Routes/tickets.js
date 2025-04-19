@@ -2,6 +2,11 @@ import { Router } from "express";
 import { TicketController } from "../Controllers/tickets.js";
 import { TicketModel } from "../Models/tickets.js";
 
+/**
+ * Método para el ruteo de los tickets
+ * @param ticketModel 
+ * @returns 
+ */
 export const createTicketsRouter = (({ticketModel}) => {
     const ticketsRouter = Router()
 
