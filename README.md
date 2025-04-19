@@ -1,5 +1,5 @@
 # **TICKETS 1.0**
-<div id="tickets"></div>
+<div id="#tickets"></div>
 # **Índice** 📑
 
 1. [Descripción](#id1)
@@ -66,14 +66,14 @@ Cuando realizamos esta acción, se eliminan automáticamente todos los datos exi
 La aplicación ha sido desarrollada usando las tecnologías y dependencias que se describen a continuación.
 
 ### <div id="id10">Backend</div>
-![NodeJs](https://img.shields.io/badge/NodeJs-NodeJs?style=plastic&logo=nodedotjs&logoColor=white&color=%235FA04E) Entorno de ejecución de JavaScript multiplataforma, de código abierto y gratuito que permite a los desarrolladores crear servidores, aplicaciones web, herramientas de línea de comando y scripts.
+![ENodeJs](https://img.shields.io/badge/NodeJs-NodeJs?style=plastic&logo=nodedotjs&logoColor=white&color=%235FA04E) Entorno de ejecución de JavaScript multiplataforma, de código abierto y gratuito que permite a los desarrolladores crear servidores, aplicaciones web, herramientas de línea de comando y scripts.
 
 ![Express](https://img.shields.io/badge/Express-NodeJs?style=plastic&logo=express&logoColor=white&color=%23000000) Es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles..
 
-![Nodemon](https://img.shields.io/badge/Nodemon-NodeJs?style=plastic&logo=nodemon&logoColor=black&labelColor=white) Nodemon es una herramienta que ayuda a desarrollar aplicaciones basadas en Node.js reiniciando automáticamente la aplicación de nodo cuando se detectan cambios de archivos en el directorio.  
+![Nodemon](https://img.shields.io/badge/Nodemon-NodeJs?style=plastic&logo=nodemon&logoColor=black&labelColor=white)) Nodemon es una herramienta que ayuda a desarrollar aplicaciones basadas en Node.js reiniciando automáticamente la aplicación de nodo cuando se detectan cambios de archivos en el directorio.  
 
 ### <div id="id11">Frontend</div>
-![React](https://img.shields.io/badge/React-React?style=plastic&logo=react&logoColor=%233998B6&labelColor=%23FFFFFF&color=%23FFFFFF&link=https%3A%2F%2Fes.react.dev%2F) React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.
+![React](https://img.shields.io/badge/ReactJs-ReactJs?style=plastic&logo=react&logoColor=%2361DAFB&labelColor=white&color=%2361DAFB) React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-JavaScript?style=plastic&logo=javascript&logoColor=white&labelColor=%23F7DF1E&color=%23F7DF1E) Lenguaje de programación que se usa para crear páginas web interactivas y para programación del lado del Backend.
 
@@ -87,11 +87,11 @@ La aplicación ha sido desarrollada usando las tecnologías y dependencias que s
 
 ### <div id="id13">IDE</div>
 
-![VS Code](https://img.shields.io/badge/VS%20Code-%23007ACC.svg?style=flat&logo=visualstudiocode&logoColor=white) Editor de código fuente utilizado para el desarrollo frontend y backend.
+![VS Code](https://img.shields.io/badge/VS%20Code-%23007ACC.svg?style=flat&logo=visualstudiocode&logoColor=white) [Visual Studio Code](https://code.visualstudio.com/): Editor de código fuente utilizado para el desarrollo frontend y backend.
 
 ### <div id="id14">Control de código</div>
 
-![GitHub](https://img.shields.io/badge/GitHub-black?logo=github) Plataforma online para almacenamiento y gestión de control de versiones utilizado para gestionar el código fuente del proyecto.
+![GitHub](https://img.shields.io/badge/GitHub-black?logo=github) [GitHub](https://github.com/): Plataforma online para almacenamiento y gestión de control de versiones utilizado para gestionar el código fuente del proyecto.
 
 ## <div id="id15">9. Autoría</div>
 
