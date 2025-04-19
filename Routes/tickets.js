@@ -9,7 +9,7 @@ export const createTicketsRouter = (({ticketModel}) => {
 
     ticketsRouter.get('/', ticketController.getAll)
 
-    //ticketsRouter.get('/:id', ticketController.getById)
+    ticketsRouter.get('/:mes', ticketController.getByMes)
 
     ticketsRouter.post('/', ticketController.create)
 

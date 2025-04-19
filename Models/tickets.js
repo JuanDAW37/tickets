@@ -20,11 +20,24 @@ export class TicketModel {
         }
         return tickets
     }
-    /*
-    static async getById(id) {
-        const movie = movies.find(movie => movie.id === id)
-        if(movie) return movie
-    }*/
+
+    /**
+     * Recupera los tickets de un mes
+     * @param mes 
+     * @returns tickets
+     */
+    static async getByMes({mes}) {        
+        let resultTickets = [];        
+        tickets.forEach(ticket => {
+            let posIni = ticket.fecha.indexOf('/');
+            let posFin = ticket.fecha.indexOf('/', posIni + 1);
+            let mesTicket = ticket.fecha.substring(posIni + 1, posFin);
+            if(mesTicket == mes.toString() || mesTicket == 0+mes.toString()){
+                resultTickets.push(ticket);                
+            }
+        });
+        return resultTickets;
+    }
 
     /**
      * Crea un ticket

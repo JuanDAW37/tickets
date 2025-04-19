@@ -34,7 +34,11 @@ label {
     text-align: right;
 }
 
-input{
+.mes{
+    width: 90px;
+}
+
+input, select{
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;    

@@ -3,9 +3,12 @@ import { helpHttp } from '../helper/Helper';
 import { Message } from '../message/Message';
 import { createPdf } from '../print/Print.js'
 import './Form.css';
-//import { json } from 'node:stream/consumers';
 
 export const Form = () => {
+    let meses = [{mes:1, nombre:'Enero'},{mes:2, nombre:'Febrero'},{mes:3, nombre:'Marzo'},{mes:4, nombre:'Abril'},
+        {mes:5, nombre:'Mayo'},{mes:6, nombre:'Junio'},{mes:7, nombre:'Julio'},{mes:8, nombre:'Agosto'},
+        {mes:9, nombre:'Septiembre'},{mes:10, nombre:'Octubre'},{mes:11, nombre:'Noviembre'},{mes:12, nombre:'Diciembre'}
+    ];
     let hoy = new Date();
     const initialForm = {
         numero:0,
@@ -19,6 +22,7 @@ export const Form = () => {
 
     const [db, setDb] = useState([]);    
     const [error, setError] = useState(null);
+    const [mes, setMes] = useState(0);
     
     const [form, setForm] = useState(initialForm);
 
@@ -91,12 +95,13 @@ export const Form = () => {
         }
     };    
     
-    const printData = () => {
-        let options = {
+    const printData = () => {        
+        let options = {            
             method: 'GET',
             headers: {'Content-Type': 'application/json'}            
         }
-        api.get(url, options)
+        let endpoint = mes === 0 ? url : `${url}/${mes}`;
+        api.get(endpoint, options)
         .then((res)=>{ 
             setDb(res);
             createPdf(res);            
@@ -121,6 +126,13 @@ export const Form = () => {
                     <input type="number" name="cuota" id="cuota" className='importes' value={form.cuota} onChange={handleForm} />
                     <label htmlFor="total">Total</label>
                     <input type="number" name="total" id="total" className='importes' value={form.total} onChange={handleForm} />
+                    <label htmlFor="mes">Mes</label>
+                    <select name="mes" id="mes" className='mes' onChange={(e) => setMes(e.target.value)}>
+                        <option value="0">Todos</option>
+                        {meses.map((item) => (
+                            <option key={item.mes} value={item.mes}>{item.nombre}</option>
+                        ))}
+                    </select>
                     <section className='botones'>
                         <button className="nuevo" type="submit" id="crear">Nuevo</button>
                         <button className="borrar" type="button" id="borrar" onClick={deleteData}>Borrar</button>

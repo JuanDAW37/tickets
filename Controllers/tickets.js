@@ -13,16 +13,21 @@ export class TicketController {
         response.json(tickets)
     }
 
-    /*
-    getById = async (request, response) => {
-        const {id} = request.params // Recupero el valor que viene en el id y lo guardo en la constante id
-        const ticket = await TicketModel.getById({id})
-        if(ticket){
-            return response.json(ticket)
+    /**
+     * Recupera los tickets de un mes
+     * @param request 
+     * @param response 
+     * @returns 
+     */    
+    getByMes = async (request, response) => {        
+        const {mes} = request.params // Recupero el valor que viene en el id y lo guardo en la constante id        
+        const tickets = await TicketModel.getByMes({mes})
+        if(tickets){
+            return response.json(tickets)
         }else{
             return response.status(404).json({'mensaje':'Ticket no encontrado!!!'})
         }
-    }*/
+    }
 
     /**
      * Crea un ticket

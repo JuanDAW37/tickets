@@ -6,6 +6,7 @@ export const createPdf = async (data) => {
     const page = pdfDoc.addPage()
     const { width, height } = page.getSize()
     const titulo = {
+        width:width,
         x: 50,
         y: height - 4 * 10,
         size: 30,
@@ -20,7 +21,7 @@ export const createPdf = async (data) => {
         color: rgb(0, 0.53, 0.71)
     }        
     data.forEach(d => {        
-        page.drawText("Restaurante Brisas", titulo);                
+        page.drawText("Restaurante Brisas", titulo);                        
         page.drawText(`Número: ${d.numero}`, texto);
         texto.y = bajaPos(texto.y);        
         page.drawText(`Fecha: ${d.fecha}`, texto);
@@ -34,8 +35,9 @@ export const createPdf = async (data) => {
         page.drawText(`Cuota: ${d.cuota.toFixed(2)}`, texto);
         texto.y = bajaPos(texto.y);        
         page.drawText(`Total: ${d.total.toFixed(2)}`, texto);
-        texto.y -= 20;
+        texto.y -= 20;        
         texto.y = bajaPos(texto.y);        
+        titulo.y = texto.y + 12                
     });    
     const pdfBytes = await pdfDoc.save();        
     window.open(URL.createObjectURL(new Blob([pdfBytes], { type: 'application/pdf' })) , '_blank');
